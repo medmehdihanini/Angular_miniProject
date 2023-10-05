@@ -3,7 +3,7 @@
   <ul>
     <li>
 
-      <h4>Facture  {{Invoice.idFacture}}   <a class="nav-link" [routerLink]="['/invoice', Invoice.idFacture, Invoice.active]"> Details</a></h4>
+      <h4>Facture  {{Invoice.idFacture}}   <a class="nav-link" [routerLink]="['/invoice']" [queryParams]="{ id: Invoice.idFacture, active: Invoice.active }"> Details</a></h4>
     </li>
   </ul>
 </div>

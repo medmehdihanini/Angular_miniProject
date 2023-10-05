@@ -27,7 +27,7 @@ component:HomeComponent
   {
     path: 'invoice-management', component: MainInvoiceComponent
   },
-  { path: 'invoice/:id/:active', component: InvoiceComponent },
+  { path: 'invoice', component: InvoiceComponent },
 
 ];
 
