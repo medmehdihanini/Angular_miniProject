@@ -1,1 +1,9 @@
-<p>invoice-list works!</p>
+
+<div *ngFor="let Invoice of listeinvoice">
+  <ul>
+    <li>
+
+      <h4>Facture  {{Invoice.idFacture}}   <a class="nav-link" [routerLink]="['/invoice', Invoice.idFacture, Invoice.active]"> Details</a></h4>
+    </li>
+  </ul>
+</div>

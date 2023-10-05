@@ -6,6 +6,7 @@ import {TestcomponentComponent} from "./testcomponent/testcomponent.component";
 import {HomeComponent} from "./home/home.component";
 import {AddUsersComponent} from "./add-users/add-users.component";
 import {MainInvoiceComponent} from "./main-invoice/main-invoice.component";
+import {InvoiceComponent} from "./invoice/invoice.component";
 
 const routes: Routes = [
 
@@ -25,7 +26,9 @@ component:HomeComponent
   },
   {
     path: 'invoice-management', component: MainInvoiceComponent
-  }
+  },
+  { path: 'invoice/:id/:active', component: InvoiceComponent },
+
 ];
 
 @NgModule({
